@@ -1,6 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import math
 
-class HeapSorter:
+class HeapSort:
+
     def __init__(self, arr):
         self.__arr = arr
         self.__count = len(arr)
@@ -36,6 +40,8 @@ class HeapSorter:
         for i in reversed(range(nonLeafNode + 1)):
             self.__shiftDown(self.__count, i)
 
-arr = [1, 2, 3, 43, 0, 99, 101, 0, 999]
-sortedArr = HeapSorter(arr).sort()
-print(sortedArr)
+
+if __name__ == "__main__":
+    arr = [1, 2, 3, 43, 0, 99, 101, 0, 999]
+    sortedArr = HeapSort(arr).sort()
+    print(sortedArr)

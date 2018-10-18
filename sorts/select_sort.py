@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 def selectSort(arr):
     for i in range(len(arr)):

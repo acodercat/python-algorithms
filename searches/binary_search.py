@@ -1,5 +1,7 @@
-import math
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
+import math
 
 def binarySearch(arr, v):
     leftIndex = 0

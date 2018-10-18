@@ -1,4 +1,5 @@
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 def insertSort(arr):
     for i in range(1, len(arr)):
