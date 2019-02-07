@@ -12,14 +12,14 @@ class Node:
     def addNode(self, c, node):
         self.__childNodes[c] = node
 
-    def value(self):
-        return self.__value
-
     def isKey(self):
         return self.__isKey
 
     def childNodes(self):
         return self.__childNodes
+
+    def value(self):
+        return self.__value
 
     def setValue(self, value):
         self.__value = value
@@ -36,7 +36,7 @@ class Trie:
     def insert(self, key, value):
         currentNode = self.__rootNode
         for c in key:
-            if not (c in currentNode.childNodes()):
+            if c not in currentNode.childNodes():
                 currentNode.childNodes()[c] = Node()
             currentNode = currentNode.childNodes()[c]
 
@@ -48,7 +48,7 @@ class Trie:
     def find(self, key):
         currentNode = self.__rootNode
         for c in key:
-            if not (c in currentNode.childNodes()):
+            if c not in currentNode.childNodes():
                 return False
             currentNode = currentNode.childNodes()[c]
         if currentNode.isKey():

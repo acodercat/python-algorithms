@@ -37,13 +37,19 @@ class Stack:
 
 
 
-stack = Stack(6)
-stack.push(4)
-stack.push(1)
-stack.push(3)
-stack.push(1)
-stack.push(3)
-stack.push(9)
-print(stack.top())
-print(stack.bottom())
-print(stack.pop())
+if __name__ == "__main__":
+    str = '{()}'
+    map = {
+        '}': '{',
+        ')': '(',
+        ']': ']'
+    }
+    stack = Stack(len(str))
+    for c in str:
+        if c in map.values():
+            stack.push(c)
+        elif c in map.keys():
+            val = stack.pop()
+            if map[c] != val:
+                raise Exception("括号匹配错误")
+

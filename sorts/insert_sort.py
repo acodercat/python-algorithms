@@ -11,7 +11,8 @@ def insertSort(arr):
         arr[j] = e
     return arr
 
-arr = insertSort([1, 2, 3, 12, 451, 0, 11, 134, 2314, 1])
-print(arr)
+if __name__ == "__main__":
+    arr = insertSort([1, 2, 3, 12, 451, 0, 11, 134, 2314, 1])
+    print(arr)
 
 

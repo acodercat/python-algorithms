@@ -77,19 +77,19 @@ class MaxHeap:
 
 
 
+if __name__ == "__main__":
+    maxHeap = MaxHeap(6)
+    maxHeap.insert(1)
+    maxHeap.insert(2)
+    maxHeap.insert(9)
+    maxHeap.insert(13)
+    maxHeap.insert(99)
+    maxHeap.insert(66)
+    maxHeap.show()
+    maxHeap.extract()
+    maxHeap.extract()
 
-maxHeap = MaxHeap(6)
-maxHeap.insert(1)
-maxHeap.insert(2)
-maxHeap.insert(9)
-maxHeap.insert(13)
-maxHeap.insert(99)
-maxHeap.insert(66)
-maxHeap.show()
-maxHeap.extract()
-maxHeap.extract()
-
-# print(maxHeap.extract())
-maxHeap.show()
-# print(maxHeap.extract())
-# print(maxHeap.extract())
+    # print(maxHeap.extract())
+    maxHeap.show()
+    # print(maxHeap.extract())
+    # print(maxHeap.extract())

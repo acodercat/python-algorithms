@@ -12,6 +12,6 @@ def selectSort(arr):
 
 
 
-
-arr = selectSort([1, 2, 3, 12, 451, 0, 11, 134, 2314, 1])
-print(arr)
+if __name__ == "__main__":
+    arr = selectSort([1, 2, 3, 12, 451, 0, 11, 134, 2314, 1])
+    print(arr)

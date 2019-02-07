@@ -12,4 +12,5 @@ def bitmap_sort(arr):
             print(index)
 
 
-bitmap_sort([11, 10, 9, 7, 0, 2, 3, 4, 5, 6, 1, 0])
+if __name__ == "__main__":
+    bitmap_sort([11, 10, 9, 7, 0, 2, 3, 4, 5, 6, 1, 0])
