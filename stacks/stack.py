@@ -38,7 +38,7 @@ class Stack:
 
 
 if __name__ == "__main__":
-    str = '{()}'
+    str = '{(1)}'
     map = {
         '}': '{',
         ')': '(',

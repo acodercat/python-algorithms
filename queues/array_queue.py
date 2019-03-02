@@ -35,11 +35,11 @@ class ArrayQueue:
         return self.__arr[0]
 
 
-
-arrayQueue = ArrayQueue(5)
-arrayQueue.enqueue(1)
-arrayQueue.enqueue(2)
-arrayQueue.enqueue(3)
-front = arrayQueue.getFront()
-print(front)
+if __name__ == "__main__":
+    arrayQueue = ArrayQueue(5)
+    arrayQueue.enqueue(1)
+    arrayQueue.enqueue(2)
+    arrayQueue.enqueue(3)
+    front = arrayQueue.getFront()
+    print(front)
 
